@@ -1,0 +1,22 @@
+.selected-item-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e4e4e4;
+    height: 39px;
+    align-items: center;
+    padding: 0px 15px;
+    margin-bottom: 10px;
+    color: #828282;
+}
+
+.no_value_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.no_value_container div {
+    color: #9b9b9b;
+    font-size: 30px;
+}
