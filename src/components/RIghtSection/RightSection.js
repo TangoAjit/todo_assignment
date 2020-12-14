@@ -26,7 +26,7 @@ const RightSection = prop => {
                             <React.Fragment>
                                 <h2>{details.title}</h2>
                                 {details.options.map((option, index) => (
-                                    <React.Fragment>
+                                    <React.Fragment key={`${option.title}_${index}`}>
                                         {option.isSelected && (
                                             <div className="selected-item-container">
                                                 <div>{option.title}</div>

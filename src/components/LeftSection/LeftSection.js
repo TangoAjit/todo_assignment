@@ -20,7 +20,7 @@ const LeftSection = props => {
                     <React.Fragment>
                         <h2>{title}</h2>
                         {options && options.length && options.map((option, index) => (
-                            <div className="list-container">
+                            <div className="list-container" key={`${option.title}_${index}`} >
                                 <CheckBox title={option.title} checked={option.isSelected} onClick={checkBoxClickHandler(key, index)} />
                             </div>
                         ))}
